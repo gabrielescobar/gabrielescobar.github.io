@@ -282,7 +282,7 @@ font-weight: 700;
 	padding: 0 13px;
 	font-weight: 400;
 	height: 35px;
-	width: 35px;
+	width: 140px;
 	display: inline-block;
 	margin-right: 3px;
 	font-size: 28px;
@@ -1084,5 +1084,9 @@ margin-right: 8px;
 
 .copyright {
 	padding-top: 15px;
+}
+
+ul.baraja-container li {
+	height: auto;
 }
 
