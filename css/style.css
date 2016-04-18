@@ -169,6 +169,12 @@ font-weight: 700;
 
 .section-title {
 	margin-bottom: 48px;
+	margin-top: 48px;
+}
+
+.section-title-black {
+	margin-bottom: 48px;
+	margin-top: 48px;
 }
 
 .section-title h3, .section-title h4 {
@@ -179,6 +185,16 @@ font-weight: 700;
 	margin-top: 0;
 	padding: 8px 0;
 	
+}
+
+.section-title-black h3, .section-title h4 {
+	color: black;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	display: inline-block;
+	margin-top: 0;
+	padding: 8px 0;
+
 }
 
 .section-overlay {
@@ -363,7 +379,7 @@ left: calc(50% - 110px);
 }
 
 .container.features {
-	padding-top: 132px;
+	padding-top: 50px;
 	padding-bottom: 190px;
 }
 
@@ -422,23 +438,68 @@ left: calc(50% - 110px);
 	font-weight: 300;
 }
 
-.features-control #feature-prev {
+.features-control #feature-prev,#feature-prev2 {
 	left: 0px;
 }
 
-.features-control #feature-expand {
+.features-control #feature-expand,#feature-expand2{
 	left: 60px;
 }
 
-.features-control #feature-close {
+.features-control #feature-close,#feature-close2 {
 	left: 120px;
 }
 
-.features-control #feature-next {
+.features-control #feature-next,#feature-next2 {
 	left: 180px;
 }
 
+/* ===== Begin progress bar ===== */
+.skill-bar {
+}
+.progress {
+	overflow: visible;
+	height: 25px;
+	margin-bottom: 20px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border-radius: 0px !important;
+}
+.progress .percent {
+	position: relative;
+	background-color: #222;
+	padding: 7px;
 
+	color: #FFF;
+	top: -23px;
+}
+.progress .percent:after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	margin-left: -4px;
+	bottom: -4px;
+	width: 0;
+	height: 0;
+	border-left: 4px solid rgba(0, 0, 0, 0);
+	border-right: 4px solid rgba(0, 0, 0, 0);
+	border-top: 4px solid #222;
+}
+.progress-bar {
+	font-size: 10px;
+	line-height: 7px;
+	text-align: right;
+
+	background-color: rgb(231, 76, 60);
+	-webkit-box-shadow: none;
+	box-shadow: none;
+
+}
+.progress-lebel h6{
+	margin-bottom: 10px;
+	letter-spacing: 2px;
+}
+/* ===== End progress bar ===== */
 
 /* ================ Services Section ================ */
 #section-services {

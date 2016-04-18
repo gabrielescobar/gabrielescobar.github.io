@@ -86,7 +86,7 @@
 
 	/* features */
 	.container.features {
-		padding-bottom: 120px;
+		padding-bottom: 0px;
 	}
 	
 	.baraja-container {
@@ -161,10 +161,21 @@
 		font-size: 24px;
 		line-height: 32px;
 	}
+	.section-title-black h3, .section-title h4 {
+		margin-bottom: 180px;
 
+	}
+	.section-title h3, .section-title h4 {
+		margin-bottom: 180px;
 
+	}
 	#section-feature {
-		padding-top: 140px;
+		padding-top: 30px;
+		padding-bottom: 40px;
+	}
+
+	#section-feature2 {
+		padding-top: 30px;
 		padding-bottom: 40px;
 	}
 	

@@ -69,10 +69,25 @@ $(document).ready(function() {
 	var $el 			= $( '#card-ul' ),
 		sectionFeature  = $('#section-feature'),
 		baraja 			= $el.baraja();
+
+	var $el2 			= $( '#card-ul2' ),
+		sectionFeature2  = $('#section-feature2'),
+		baraja2 			= $el2.baraja();
 	
 		if ( $(window).width() > 480) {
 			sectionFeature.appear(function(){
 				baraja.fan({
+					speed : 1500,
+					easing : 'ease-out',
+					range : 100,
+					direction : 'right',
+					origin : { x : 50, y : 200 },
+					center : true
+				});
+			});
+
+			sectionFeature2.appear(function(){
+				baraja2.fan({
 					speed : 1500,
 					easing : 'ease-out',
 					range : 100,
@@ -90,7 +105,17 @@ $(document).ready(function() {
 					origin : { x : 50, y : 200 },
 					center : true
 				});
-			}); 
+			});
+			$('#feature-expand2').click(function() {
+				baraja2.fan({
+					speed : 500,
+					easing : 'ease-out',
+					range : 100,
+					direction : 'right',
+					origin : { x : 50, y : 200 },
+					center : true
+				});
+			});
 		} else {
 			sectionFeature.appear(function(){
 				baraja.fan({
@@ -102,8 +127,18 @@ $(document).ready(function() {
 					center : true
 				});
 			});
-			$('#feature-expand').click(function() {
-				baraja.fan({
+			sectionFeature2.appear(function(){
+				baraja2.fan({
+					speed : 1500,
+					easing : 'ease-out',
+					range : 80,
+					direction : 'left',
+					origin : { x : 200, y : 50 },
+					center : true
+				});
+			});
+			$('#feature-expand2').click(function() {
+				baraja2.fan({
 					speed : 500,
 					easing : 'ease-out',
 					range : 80,
@@ -119,14 +154,26 @@ $(document).ready(function() {
 		baraja.previous();
 	});
 
+	$('#feature-prev2').on( 'click', function( event ) {
+		baraja2.previous();
+	});
+
 	$('#feature-next').on( 'click', function( event ) {
 		baraja.next();
+	});
+
+	$('#feature-next2').on( 'click', function( event ) {
+		baraja2.next();
 	});
 	
 	// close Features
 	$('#feature-close').on( 'click', function( event ) {
 		baraja.close();
-	});	
+	});
+
+	$('#feature-close2').on( 'click', function( event ) {
+		baraja2.close();
+	});
 });
 
 /* ----------------------------- 
