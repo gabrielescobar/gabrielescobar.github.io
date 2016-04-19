@@ -1,7 +1,8 @@
 /**
  * Created by GABRIEL ESCOBAR on 25/02/2016.
  */
-
+//Clean Design
+    
 var translations = {
     "es": {
         "sendmessage": "Enviar Mensaje",
