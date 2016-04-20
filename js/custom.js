@@ -181,7 +181,7 @@ Fitvids init
 ----------------------------- */
  $(document).ready(function(){
     'use strict';
-    $('.video-content').fitVids();
+   /* $('.video-content').fitVids();*/
  });
 
 
