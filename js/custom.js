@@ -13,13 +13,15 @@ Backgroung slider
 ----------------------------- */
 $(window).ready(function() {
 	'use strict';
-	$.vegas('slideshow', {
-	  backgrounds:[
-		{ src:'images/bg-slider/bg-1.jpg', fade:1000 },
-/*		{ src:'images/bg-slider/bg-2.jpg', fade:1000 },*/
-		{ src:'images/bg-slider/bg-3.jpg', fade:1000 }
-	  ]
-	})();
+
+	$("#example, body").vegas({
+		slides: [
+			{ src:'images/bg-slider/bg-1.jpg'}
+			,{ src:'images/bg-slider/bg-2.jpg'},
+			{ src:'images/bg-slider/bg-3.jpg'}
+		],
+		transition: [ 'blur2', 'zoomOut2', 'zoomIn2' ]
+	});
 });
 
 /* ----------------------------- 
@@ -67,11 +69,11 @@ Card Style Script
 $(document).ready(function() {
 	'use strict';
 	var $el 			= $( '#card-ul' ),
-		sectionFeature  = $('#section-feature'),
+		sectionFeature  = $('#section-experience'),
 		baraja 			= $el.baraja();
 
 	var $el2 			= $( '#card-ul2' ),
-		sectionFeature2  = $('#section-feature2'),
+		sectionFeature2  = $('#section-education'),
 		baraja2 			= $el2.baraja();
 	
 		if ( $(window).width() > 480) {
@@ -215,7 +217,7 @@ $(document).ready(function() {
 		var href 			= $(this).attr('href') + ' .portfolio-project',
 			portfolioWrap	= $('.porfolio-container'),
 			contentLoaded 	= $('#portfolio-load'),
-			offset			= $('#section-screenshots').offset().top;
+			offset			= $('#section-portfolio').offset().top;
 		
 		portfolioWrap.animate({'left':'-120%'},{duration:400,queue:false});
 		portfolioWrap.fadeOut(400);

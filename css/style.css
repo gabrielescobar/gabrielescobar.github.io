@@ -374,7 +374,7 @@ left: calc(50% - 110px);
 
 
 /* ================ Features Section ================ */
-#section-feature {
+#section-experience {
 	background-color: #f9f9f9;
 }
 
@@ -502,7 +502,7 @@ left: calc(50% - 110px);
 /* ===== End progress bar ===== */
 
 /* ================ Services Section ================ */
-#section-services {
+#section-habilities {
 	position:relative;
 	background-color: #333333;
 	color: #e5e5e5;
@@ -628,7 +628,7 @@ border: 0 !important;
 
 
 /* ================ ScreenShots Section ================ */
-#section-screenshots {
+#section-portfolio {
 	background-color:#333333;
 	color:#e5e5e5;
 }
@@ -820,21 +820,21 @@ margin-right: 8px;
 }
 
 
-/* ================ Testimonials Section ================ */
-#section-testimonials {
+/* ================ abouts Section ================ */
+#section-about {
 	color:#e5e5e5;
 }
 
-.testimonials-wrap {
+.abouts-wrap {
 	position:relative;
 }
 
-.testimonials {
+.abouts {
 	padding-top: 120px;
 	padding-bottom: 120px;
 }
 
-.testimonials .comment {
+.abouts .comment {
 	font-size: 18px;
 	margin-bottom: 48px;
 }
@@ -886,7 +886,7 @@ margin-right: 8px;
 
 
 /* ================ Pricing Section ================ */
-#section-pricing {
+#section-about {
 	background: #f9f9f9;
 	color:#666;
 }

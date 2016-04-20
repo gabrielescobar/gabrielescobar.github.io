@@ -1,13 +1,13 @@
 {
-  "name": "Vegas",
-  "version": "1.3.5",
+  "name": "vegas",
+  "version": "2.2.0",
   "main": [
-    "dist/jquery.vegas.js",
-    "dist/jquery.vegas.css"
+    "dist/vegas.min.js",
+    "dist/vegas.min.css"
   ],
   "ignore": [
     "src",
-    "gruntfile.js",
+    "gulpfile.js",
     "package.json",
     "component.json"
   ],
@@ -15,13 +15,13 @@
     "jquery": ">=1.9"
   },
   "homepage": "https://github.com/jaysalvat/vegas",
-  "_release": "1.3.5",
+  "_release": "2.2.0",
   "_resolution": {
     "type": "version",
-    "tag": "v1.3.5",
-    "commit": "4896ce52c0b6bea9bbe660e420172472bd12edd5"
+    "tag": "v2.2.0",
+    "commit": "9e0a59f0ded95c9b3c53351dd17f5bdcbe42555a"
   },
   "_source": "https://github.com/jaysalvat/vegas.git",
-  "_target": "1.3.5",
+  "_target": "2.2.0",
   "_originalSource": "vegas"
 }
